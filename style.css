@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: black;
+}
+.nav-left {
+  margin-left: 2rem;
+  color: white;
+}
+.nav-left .hexa-img {
+  width: 40px;
+  transition: transform 1000ms ease-in-out;
+  position: relative;
+}
+.nav-left span {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  top: 18px;
+  left: 42px;
+}
+.nav-left:hover .hexa-img {
+  transform: rotate(180deg);
+}
+.nav-left span:hover {
+  color: #00ff9e;
+  top: 16px;
+  left: 41px;
+  font-size: 1.2em;
+  transition: font-size 300ms;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-right: 2rem;
+}
+.nav-right a {
+  text-decoration: none;
+  color: white;
+}
+.nav-right a:hover {
+  color: #00ff9e;
+  font-size: 1.2em;
+  transition: font-size 300ms;
+}
