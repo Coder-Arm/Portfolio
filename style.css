@@ -13,34 +13,44 @@
 .nav-left {
   margin-left: 2rem;
   color: white;
+  position: relative;
 }
 .nav-left .hexa-img {
   width: 40px;
   transition: transform 1000ms ease-in-out;
-  position: relative;
 }
 .nav-left span {
   position: absolute;
   color: white;
   font-weight: 700;
-  top: 18px;
-  left: 42px;
+  top: 0.6rem;
+  left: 0.65rem;
 }
 .nav-left:hover .hexa-img {
   transform: rotate(180deg);
 }
 .nav-left span:hover {
   color: #00ff9e;
-  top: 16px;
-  left: 41px;
+  top: 0.5rem;
+  left: 0.55rem;
   font-size: 1.2em;
-  transition: font-size 300ms;
+  transition: font-size 300ms ease-in-out;
 }
 .nav-right {
   display: flex;
   align-items: center;
   column-gap: 2rem;
   margin-right: 2rem;
+}
+.nav-right .underline {
+  margin-top: 0.2rem;
+  width: 0%;
+  height: 0.1rem;
+  background-color: #00ff9e;
+  transition: width 250ms ease-in-out;
+}
+.nav-right > div:hover .underline {
+  width: 75%;
 }
 .nav-right a {
   text-decoration: none;
