@@ -58,15 +58,15 @@
 }
 .nav-right a:hover {
   color: #00ff9e;
-  font-size: 1.2em;
-  transition: font-size 300ms;
 }
 /*        header-end      */
 main {
   background-color: #0a192f;
 }
-#home {
+section {
   padding: 6rem;
+}
+#home {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -89,22 +89,14 @@ main {
 .profile-img {
   width: 25%;
   height: 50vh;
-  background-image: url(photo.jpg);
-  background-size: cover;
   border-radius: 1rem;
-  position: relative;
   overflow: hidden;
 }
 .profile-img > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 800ms ease-in-out;
+  border-radius: inherit;
+  transition: transform 500ms ease-in-out;
 }
 .profile-img > img:hover {
   transform: scale(1.2);
